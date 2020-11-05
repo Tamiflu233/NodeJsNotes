@@ -27,7 +27,7 @@ var buf = Buffer.alloc(20)
 /* var content = fs.readSync(fd,buf,0,20,0) */
 
 
-// 同步方式读取文件高度封装版 fs.readFileSync(path,options),不需要先打开再读取，可以一次性完成俩操作
+// 同步方式(会等待和阻塞)读取文件高度封装版 fs.readFileSync(path,options),不需要先打开再读取，可以一次性完成俩操作
 //返回读取内容的buffer16进制数据，可以用toString转换成文本(或者在options里面设置编码)
 /* var content = fs.readFileSync('./hello.txt',{
   flag:'r', //读标志
@@ -36,7 +36,7 @@ var buf = Buffer.alloc(20)
 
 
 
-// 异步读取文件(和readFileSync类似,不过读取到的数据是回调函数的参数而不是函数返回值) fs.readFile(path[,options],callback)
+// 异步(提升效率)读取文件(和readFileSync类似,不过读取到的数据是回调函数的参数而不是函数返回值) fs.readFile(path[,options],callback)
 /* fs.readFile("./hello.txt",{flag: 'r',encoding: "utf-8"},(err, data) => {
   if(err) {
     console.log(err);
@@ -64,10 +64,23 @@ function fsRead (path) {
     })
   })
 }
-
+/* 
 var w1 = fsRead('./hello.txt')
 w1.then(res => {
   console.log(res);
 }).catch(err => {
   console.log(err);
 })
+ */
+
+ /* 
+  用async函数和 await表达式进一步封装
+ */
+async function ReadList () {
+  var file2 = await fsRead('./hello.txt')
+  var file3 = await fsRead(file2.trim() + '.txt')
+  var file3Content = await fsRead(file3.trim() + '.txt')
+  console.log(file3Content);
+}
+
+ReadList();
