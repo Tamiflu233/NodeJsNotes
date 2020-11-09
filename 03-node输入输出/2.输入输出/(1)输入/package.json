@@ -1,0 +1,20 @@
+{"name":"Vue","description":"haha","main":"main.js","author":"Tamiflu"}{
+    "name": "Vue",
+    "version": "1.0.0",
+    "description": "vue for you",
+    "main": "vue.js",
+    "dependencies": {
+      "_jquery@3.5.1@jquery": "^3.5.1",
+      "jquery": "^3.5.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo "Error: no test specified" && exit 1"
+    },
+    "keywords": [
+      "'node'"
+    ],
+    "author": "Tamiflu",
+    "license": "ISC"
+  }
+  
