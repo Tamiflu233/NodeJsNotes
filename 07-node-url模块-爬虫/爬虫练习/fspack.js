@@ -18,7 +18,7 @@ function fsWriter(path, data) {
       if (err) {
         reject(err)
       } else {
-        resolve("写入成功")
+        resolve("数据写入成功")
       }
     })
   })
