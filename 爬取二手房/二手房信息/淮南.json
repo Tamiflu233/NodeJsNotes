@@ -1,0 +1,1168 @@
+[
+  {
+    "houseName": "田家庵 电厂路钟郢小区 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "64.47㎡",
+    "houseLayers": "高层（共5层）",
+    "houseDirect": "南向",
+    "community": "电厂路钟郢小区",
+    "detailAddress": "其他",
+    "price": "1830元/㎡"
+  },
+  {
+    "houseName": "恒大未来城 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "80㎡",
+    "houseLayers": "低层（共24层）",
+    "houseDirect": "南向",
+    "community": "恒大未来城",
+    "price": "5625元/㎡"
+  },
+  {
+    "houseName": "寿县 空港恒大时代新城 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "125㎡",
+    "houseLayers": "中层（共23层）",
+    "houseDirect": "东西向",
+    "community": "空港恒大时代新城",
+    "detailAddress": "寿县新一中",
+    "price": "5600元/㎡"
+  },
+  {
+    "houseName": "田家庵 城建小区 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "55㎡",
+    "houseLayers": "高层（共5层）",
+    "houseDirect": "南向",
+    "community": "城建小区",
+    "detailAddress": "龙湖",
+    "price": "3636元/㎡"
+  },
+  {
+    "houseName": "潘集 滨河新城 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "90㎡",
+    "houseLayers": "低层（共27层）",
+    "houseDirect": "南向",
+    "community": "滨河新城",
+    "detailAddress": "潘集",
+    "price": "2222元/㎡"
+  },
+  {
+    "houseName": "田家庵 金地·中央美域 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "98㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "金地·中央美域",
+    "detailAddress": "其他-山南新区和风大街与杜鹃路交汇处",
+    "price": "8571元/㎡"
+  },
+  {
+    "houseName": "田家庵 金大地国际城二期 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "90.1㎡",
+    "houseLayers": "中层（共35层）",
+    "houseDirect": "南向",
+    "community": "金大地国际城二期",
+    "detailAddress": "其他",
+    "price": "7214元/㎡"
+  },
+  {
+    "houseName": "田家庵 双子星座 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "106㎡",
+    "houseLayers": "中层（共30层）",
+    "houseDirect": "南北向",
+    "community": "双子星座",
+    "detailAddress": "龙湖",
+    "price": "5849元/㎡"
+  },
+  {
+    "houseName": "田家庵 海沃世贸商城 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "100.85㎡",
+    "houseLayers": "高层（共29层）",
+    "houseDirect": "南向",
+    "community": "海沃世贸商城",
+    "detailAddress": "火车站-龙湖南路与舜耕路交汇处",
+    "price": "6921元/㎡"
+  },
+  {
+    "houseName": "山南新区 联华泉山湖 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "85㎡",
+    "houseLayers": "中层（共7层）",
+    "houseDirect": "南北向",
+    "community": "联华泉山湖",
+    "detailAddress": "山南新区-淮南大道(原206国道)泉山湖水库",
+    "price": "8470元/㎡"
+  },
+  {
+    "houseName": "谢家集 卧龙山庄 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "80㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "卧龙山庄",
+    "detailAddress": "谢家集-卧龙山庄",
+    "price": "3250元/㎡"
+  },
+  {
+    "houseName": "田家庵 金大地龙湖中心 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "100㎡",
+    "houseLayers": "高层（共33层）",
+    "houseDirect": "南向",
+    "community": "金大地龙湖中心",
+    "detailAddress": "龙湖路-金大地龙湖中心",
+    "price": "8800元/㎡"
+  },
+  {
+    "houseName": "凤台 西城公馆 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "180㎡",
+    "houseLayers": "高层（共27层）",
+    "houseDirect": "南北向",
+    "community": "西城公馆",
+    "detailAddress": "凤城大道",
+    "price": "4722元/㎡"
+  },
+  {
+    "houseName": "山南新区 晟地绿园 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "119㎡",
+    "houseLayers": "低层（共6层）",
+    "houseDirect": "南向",
+    "community": "晟地绿园",
+    "detailAddress": "山南新区-晟地绿园",
+    "price": "6638元/㎡"
+  },
+  {
+    "houseName": "大通 安徽淮南市田家庵区阳光国际城 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "104㎡",
+    "houseLayers": "高层（共11层）",
+    "houseDirect": "南向",
+    "community": "安徽淮南市田家庵区阳",
+    "detailAddress": "大通",
+    "price": "11538元/㎡"
+  },
+  {
+    "houseName": "窑口 4室1厅",
+    "houseScale": "4室1厅",
+    "houseArea": "100㎡",
+    "houseLayers": "高层（共2层）",
+    "houseDirect": "西向",
+    "community": "窑口",
+    "price": "4600元/㎡"
+  },
+  {
+    "houseName": "寿县 千树湾 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "110㎡",
+    "houseLayers": "高层（共34层）",
+    "houseDirect": "南向",
+    "community": "千树湾",
+    "detailAddress": "寿县新一中",
+    "price": "6181元/㎡"
+  },
+  {
+    "houseName": "田家庵 山南国宾府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "147㎡",
+    "houseLayers": "中层（共17层）",
+    "houseDirect": "南向",
+    "community": "山南国宾府",
+    "detailAddress": "龙湖",
+    "price": "8843元/㎡"
+  },
+  {
+    "houseName": "田家庵 化建村 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "68.9㎡",
+    "houseLayers": "高层（共7层）",
+    "houseDirect": "南向",
+    "community": "化建村",
+    "detailAddress": "泉山",
+    "price": "2322元/㎡"
+  },
+  {
+    "houseName": "大通 万茂华府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "116㎡",
+    "houseLayers": "低层（共34层）",
+    "houseDirect": "南北向",
+    "community": "万茂华府",
+    "detailAddress": "其他",
+    "price": "7241元/㎡"
+  },
+  {
+    "houseName": "田家庵 金大地龙湖中心 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "71.5㎡",
+    "houseLayers": "高层（共27层）",
+    "houseDirect": "南北向",
+    "community": "金大地龙湖中心",
+    "detailAddress": "龙湖路-金大地龙湖中心",
+    "price": "5594元/㎡"
+  },
+  {
+    "houseName": "田家庵 金大地龙湖中心 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "71.5㎡",
+    "houseLayers": "高层（共27层）",
+    "houseDirect": "南北向",
+    "community": "金大地龙湖中心",
+    "detailAddress": "龙湖路-金大地龙湖中心",
+    "price": "5314元/㎡"
+  },
+  {
+    "houseName": "田家庵 金地中央美域公寓 1室1厅",
+    "houseScale": "1室1厅",
+    "houseArea": "41.7㎡",
+    "houseLayers": "高层（共7层）",
+    "houseDirect": "南向",
+    "community": "金地中央美域公寓",
+    "detailAddress": "其他",
+    "price": "6714元/㎡"
+  },
+  {
+    "houseName": "田家庵 恒大御府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "131.44㎡",
+    "houseLayers": "低层（共33层）",
+    "houseDirect": "南向",
+    "community": "恒大御府",
+    "detailAddress": "洞山",
+    "price": "7912元/㎡"
+  },
+  {
+    "houseName": "经济开发区 保来国际城 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "79.36㎡",
+    "houseLayers": "高层（共21层）",
+    "houseDirect": "南北向",
+    "community": "保来国际城",
+    "detailAddress": "经济开发区",
+    "price": "6199元/㎡"
+  },
+  {
+    "houseName": "大通 碧荷亭 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "88㎡",
+    "houseLayers": "中层（共16层）",
+    "houseDirect": "南北向",
+    "community": "碧荷亭",
+    "detailAddress": "大通",
+    "price": "8522元/㎡"
+  },
+  {
+    "houseName": "田家庵 恒大御府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "131㎡",
+    "houseLayers": "中层（共33层）",
+    "houseDirect": "南向",
+    "community": "恒大御府",
+    "detailAddress": "洞山",
+    "price": "7786元/㎡"
+  },
+  {
+    "houseName": "田家庵 恒大御府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "115㎡",
+    "houseLayers": "中层（共33层）",
+    "houseDirect": "南向",
+    "community": "恒大御府",
+    "detailAddress": "洞山",
+    "price": "7913元/㎡"
+  },
+  {
+    "houseName": "凤台 西城公馆 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "141.6㎡",
+    "houseLayers": "高层（共27层）",
+    "houseDirect": "南北向",
+    "community": "西城公馆",
+    "detailAddress": "胶州路",
+    "price": "6002元/㎡"
+  },
+  {
+    "houseName": "潘集 滨河新城 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "90㎡",
+    "houseLayers": "中层（共27层）",
+    "houseDirect": "南向",
+    "community": "滨河新城",
+    "detailAddress": "潘集",
+    "price": "2222元/㎡"
+  },
+  {
+    "houseName": "山南新区 观湖名居 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "126㎡",
+    "houseLayers": "高层（共34层）",
+    "houseDirect": "南北向",
+    "community": "观湖名居",
+    "detailAddress": "山南新区-观湖名居",
+    "price": "7142元/㎡"
+  },
+  {
+    "houseName": "凤台 西城公馆 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "141.6㎡",
+    "houseLayers": "高层（共27层）",
+    "houseDirect": "南北向",
+    "community": "西城公馆",
+    "detailAddress": "凤城大道",
+    "price": "6002元/㎡"
+  },
+  {
+    "houseName": "潘集 滨河新城 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "86.7㎡",
+    "houseLayers": "低层（共27层）",
+    "houseDirect": "南向",
+    "community": "滨河新城",
+    "detailAddress": "潘集",
+    "price": "2422元/㎡"
+  },
+  {
+    "houseName": "大通 顺发泽润园 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "88.9㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南北向",
+    "community": "顺发泽润园",
+    "detailAddress": "城东-九大路与合徐高速连接处交汇处东南角",
+    "price": "5961元/㎡"
+  },
+  {
+    "houseName": "山南新区 金大地英伦联邦 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "99.83㎡",
+    "houseLayers": "中层（共33层）",
+    "houseDirect": "南北向",
+    "community": "金大地英伦联邦",
+    "detailAddress": "山南新区-淮南市山南新区淮河大道与春华大街交叉口",
+    "price": "7612元/㎡"
+  },
+  {
+    "houseName": "谢家集 勘探村 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "65㎡",
+    "houseLayers": "高层（共4层）",
+    "houseDirect": "南向",
+    "community": "勘探村",
+    "detailAddress": "谢家集",
+    "price": "2076元/㎡"
+  },
+  {
+    "houseName": "寿县 保来国际城 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "78.77㎡",
+    "houseLayers": "低层（共24层）",
+    "houseDirect": "南向",
+    "community": "保来国际城",
+    "detailAddress": "寿县新一中",
+    "price": "6982元/㎡"
+  },
+  {
+    "houseName": "田家庵 百花园 4室3厅",
+    "houseScale": "4室3厅",
+    "houseArea": "115.61㎡",
+    "houseLayers": "高层（共5层）",
+    "houseDirect": "东向",
+    "community": "百花园",
+    "detailAddress": "国庆中路",
+    "price": "4151元/㎡"
+  },
+  {
+    "houseName": "居仁村一区 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "89.7㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "居仁村一区",
+    "price": "3957元/㎡"
+  },
+  {
+    "houseName": "谢家集 新家园A区 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "101㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南向",
+    "community": "新家园A区",
+    "detailAddress": "谢家集",
+    "price": "2277元/㎡"
+  },
+  {
+    "houseName": "田家庵 嘉鹏领城 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "89㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南北向",
+    "community": "嘉鹏领城",
+    "detailAddress": "其他-淮南市田家庵区朝阳东路99号",
+    "price": "7078元/㎡"
+  },
+  {
+    "houseName": "大通 顺发泽润园 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "77㎡",
+    "houseLayers": "低层（共6层）",
+    "houseDirect": "南向",
+    "community": "顺发泽润园",
+    "detailAddress": "城东",
+    "price": "5454元/㎡"
+  },
+  {
+    "houseName": "田家庵 春晓名城 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "89㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "春晓名城",
+    "detailAddress": "其他",
+    "price": "5393元/㎡"
+  },
+  {
+    "houseName": "田家庵 春晓名城 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "89㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "春晓名城",
+    "detailAddress": "其他",
+    "price": "5393元/㎡"
+  },
+  {
+    "houseName": "田家庵 海沃世贸商城 1室1厅",
+    "houseScale": "1室1厅",
+    "houseArea": "54㎡",
+    "houseLayers": "中层（共32层）",
+    "houseDirect": "北向",
+    "community": "海沃世贸商城",
+    "detailAddress": "火车站-龙湖南路与舜耕路交汇处",
+    "price": "5555元/㎡"
+  },
+  {
+    "houseName": "凤台 凤台金汇广场地下商业街商 1室0厅",
+    "houseScale": "1室0厅",
+    "houseArea": "42㎡",
+    "houseLayers": "低层（共1层）",
+    "houseDirect": "南向",
+    "community": "凤台金汇广场地下商业",
+    "detailAddress": "农水路",
+    "price": "21428元/㎡"
+  },
+  {
+    "houseName": "凤台 凤台金汇广场 1室0厅",
+    "houseScale": "1室0厅",
+    "houseArea": "42㎡",
+    "houseLayers": "高层（共1层）",
+    "houseDirect": "南向",
+    "community": "凤台金汇广场",
+    "detailAddress": "青年路",
+    "price": "21428元/㎡"
+  },
+  {
+    "houseName": "田家庵 网云小镇 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "123.09㎡",
+    "houseLayers": "中层（共23层）",
+    "houseDirect": "南向",
+    "community": "网云小镇",
+    "detailAddress": "其他",
+    "price": "5280元/㎡"
+  },
+  {
+    "houseName": "山南新区 金地滟澜山 1室0厅",
+    "houseScale": "1室0厅",
+    "houseArea": "47.19㎡",
+    "houseLayers": "中层（共2层）",
+    "houseDirect": "南北向",
+    "community": "金地滟澜山",
+    "detailAddress": "山南新区-淮河大道与南纬二路交叉口西北角",
+    "price": "16528元/㎡"
+  },
+  {
+    "houseName": "凤台 金地新天地 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "158㎡",
+    "houseLayers": "中层（共18层）",
+    "houseDirect": "南北向",
+    "community": "金地新天地",
+    "detailAddress": "青年路-金地新天地",
+    "price": "5886元/㎡"
+  },
+  {
+    "houseName": "寿县 文一叶语湾 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "104㎡",
+    "houseLayers": "高层（共10层）",
+    "houseDirect": "南向",
+    "community": "文一叶语湾",
+    "detailAddress": "寿县新一中",
+    "price": "7596元/㎡"
+  },
+  {
+    "houseName": "田家庵 裕安三村 5室2厅",
+    "houseScale": "5室2厅",
+    "houseArea": "187.42㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南北向",
+    "community": "裕安三村",
+    "detailAddress": "洞山",
+    "price": "4962元/㎡"
+  },
+  {
+    "houseName": "田家庵 惠利花园D区 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "85.68㎡",
+    "houseLayers": "中层（共12层）",
+    "houseDirect": "西南向",
+    "community": "惠利花园D区",
+    "detailAddress": "其他",
+    "price": "5485元/㎡"
+  },
+  {
+    "houseName": "田家庵 金茂阳光花园 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "113㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "金茂阳光花园",
+    "detailAddress": "其他",
+    "price": "4991元/㎡"
+  },
+  {
+    "houseName": "山南新区 联华泉山湖 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "98㎡",
+    "houseLayers": "低层（共7层）",
+    "houseDirect": "南向",
+    "community": "联华泉山湖",
+    "detailAddress": "山南新区-淮南大道(原206国道)泉山湖水库",
+    "price": "6428元/㎡"
+  },
+  {
+    "houseName": "田家庵 供电局72户 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "64㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南向",
+    "community": "供电局72户",
+    "detailAddress": "淮舜",
+    "price": "2812元/㎡"
+  },
+  {
+    "houseName": "田家庵 东城国际 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "94.5㎡",
+    "houseLayers": "低层（共10层）",
+    "houseDirect": "南向",
+    "community": "东城国际",
+    "detailAddress": "国庆中路-国庆东路与建兴路交叉口",
+    "price": "5714元/㎡"
+  },
+  {
+    "houseName": "田家庵 奥林花园 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "136.8㎡",
+    "houseLayers": "低层（共25层）",
+    "houseDirect": "南北向",
+    "community": "奥林花园",
+    "detailAddress": "国庆中路-淮南市人民南路",
+    "price": "5774元/㎡"
+  },
+  {
+    "houseName": "田家庵 新光花园 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "139.6㎡",
+    "houseLayers": "中层（共18层）",
+    "houseDirect": "南向",
+    "community": "新光花园",
+    "detailAddress": "洞山",
+    "price": "6805元/㎡"
+  },
+  {
+    "houseName": "田家庵 奥林花园 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "136㎡",
+    "houseLayers": "低层（共25层）",
+    "houseDirect": "南北向",
+    "community": "奥林花园",
+    "detailAddress": "国庆中路",
+    "price": "5808元/㎡"
+  },
+  {
+    "houseName": "凤台 西城公馆 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "141.6㎡",
+    "houseLayers": "高层（共27层）",
+    "houseDirect": "南北向",
+    "community": "西城公馆",
+    "detailAddress": "凤城大道",
+    "price": "6002元/㎡"
+  },
+  {
+    "houseName": "山南新区 金地滟澜山 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "137㎡",
+    "houseLayers": "低层（共8层）",
+    "houseDirect": "南向",
+    "community": "金地滟澜山",
+    "detailAddress": "山南新区-淮河大道与南纬二路交叉口西北角",
+    "price": "10072元/㎡"
+  },
+  {
+    "houseName": "凤台 前马场 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "85㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南北向",
+    "community": "前马场",
+    "detailAddress": "凤城大道",
+    "price": "1764元/㎡"
+  },
+  {
+    "houseName": "潘集 绿景宝辰花园 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "107㎡",
+    "houseLayers": "低层（共6层）",
+    "houseDirect": "南向",
+    "community": "绿景宝辰花园",
+    "detailAddress": "潘集",
+    "price": "3644元/㎡"
+  },
+  {
+    "houseName": "田家庵 东方名珠 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "89.52㎡",
+    "houseLayers": "高层（共18层）",
+    "houseDirect": "南北向",
+    "community": "东方名珠",
+    "detailAddress": "龙湖路-朝阳东路与淮舜路交汇处",
+    "price": "7037元/㎡"
+  },
+  {
+    "houseName": "凤台 翠苑康城 5室2厅",
+    "houseScale": "5室2厅",
+    "houseArea": "200㎡",
+    "houseLayers": "高层（共12层）",
+    "houseDirect": "南北向",
+    "community": "翠苑康城",
+    "detailAddress": "青年路",
+    "price": "5500元/㎡"
+  },
+  {
+    "houseName": "寿县 文一叶雨湾 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "94㎡",
+    "houseLayers": "高层（共10层）",
+    "houseDirect": "南向",
+    "community": "文一叶雨湾",
+    "detailAddress": "寿县新一中",
+    "price": "10000元/㎡"
+  },
+  {
+    "houseName": "田家庵 钟山园旁针织厂 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "65㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "钟山园旁针织厂",
+    "detailAddress": "淮舜",
+    "price": "2461元/㎡"
+  },
+  {
+    "houseName": "田家庵 泉林村 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "57.68㎡",
+    "houseLayers": "中层（共5层）",
+    "houseDirect": "南向",
+    "community": "泉林村",
+    "detailAddress": "洞山",
+    "price": "5201元/㎡"
+  },
+  {
+    "houseName": "曹庵镇 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "190㎡",
+    "houseLayers": "高层（共2层）",
+    "houseDirect": "南北向",
+    "community": "曹庵镇",
+    "price": "1526元/㎡"
+  },
+  {
+    "houseName": "大通 自建房 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "190㎡",
+    "houseLayers": "高层（共2层）",
+    "houseDirect": "南北向",
+    "community": "自建房",
+    "detailAddress": "大通",
+    "price": "1526元/㎡"
+  },
+  {
+    "houseName": "田家庵 淮河公馆 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "109㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "淮河公馆",
+    "detailAddress": "其他",
+    "price": "6055元/㎡"
+  },
+  {
+    "houseName": "田家庵 翡翠苑 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "85㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南向",
+    "community": "翡翠苑",
+    "detailAddress": "国庆中路",
+    "price": "3529元/㎡"
+  },
+  {
+    "houseName": "田家庵 泉山化肥厂 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "91㎡",
+    "houseLayers": "高层（共7层）",
+    "houseDirect": "北向",
+    "community": "泉山化肥厂",
+    "detailAddress": "泉山",
+    "price": "2527元/㎡"
+  },
+  {
+    "houseName": "田家庵 春晓名城 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "89㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "春晓名城",
+    "detailAddress": "其他",
+    "price": "5617元/㎡"
+  },
+  {
+    "houseName": "田家庵 申欣苑 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "91㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南向",
+    "community": "申欣苑",
+    "detailAddress": "国庆中路",
+    "price": "5934元/㎡"
+  },
+  {
+    "houseName": "田家庵 金茂阳光花园 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "113㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "金茂阳光花园",
+    "detailAddress": "其他",
+    "price": "4955元/㎡"
+  },
+  {
+    "houseName": "凤台 西城公馆 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "141.6㎡",
+    "houseLayers": "高层（共27层）",
+    "houseDirect": "南北向",
+    "community": "西城公馆",
+    "detailAddress": "凤城大道",
+    "price": "6002元/㎡"
+  },
+  {
+    "houseName": "寿县 文一叶雨湾 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "96.6㎡",
+    "houseLayers": "中层（共18层）",
+    "houseDirect": "南北向",
+    "community": "文一叶雨湾",
+    "detailAddress": "寿春镇",
+    "price": "7246元/㎡"
+  },
+  {
+    "houseName": "大通 顺发泽润园 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "77.6㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "东向",
+    "community": "顺发泽润园",
+    "detailAddress": "城东-九大路与合徐高速连接处交汇处东南角",
+    "price": "6314元/㎡"
+  },
+  {
+    "houseName": "田家庵 恒大御府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "129.09㎡",
+    "houseLayers": "低层（共40层）",
+    "houseDirect": "南向",
+    "community": "恒大御府",
+    "detailAddress": "其他",
+    "price": "8133元/㎡"
+  },
+  {
+    "houseName": "田家庵 翡翠苑 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "106㎡",
+    "houseLayers": "中层（共6层）",
+    "houseDirect": "南向",
+    "community": "翡翠苑",
+    "detailAddress": "龙湖",
+    "price": "4009元/㎡"
+  },
+  {
+    "houseName": "寿县 御景学府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "129㎡",
+    "houseLayers": "中层（共29层）",
+    "houseDirect": "南北向",
+    "community": "御景学府",
+    "detailAddress": "寿春镇",
+    "price": "8914元/㎡"
+  },
+  {
+    "houseName": "田家庵 自建房 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "100㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南北向",
+    "community": "自建房",
+    "detailAddress": "其他",
+    "price": "650元/㎡"
+  },
+  {
+    "houseName": "田家庵 青年公寓 1室1厅",
+    "houseScale": "1室1厅",
+    "houseArea": "37㎡",
+    "houseLayers": "中层（共29层）",
+    "houseDirect": "东向",
+    "community": "青年公寓",
+    "detailAddress": "龙湖",
+    "price": "5000元/㎡"
+  },
+  {
+    "houseName": "田家庵 钟山园小区 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "120㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南向",
+    "community": "钟山园小区",
+    "detailAddress": "国庆中路",
+    "price": "3416元/㎡"
+  },
+  {
+    "houseName": "凤台 西城公馆 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "141.6㎡",
+    "houseLayers": "高层（共27层）",
+    "houseDirect": "南北向",
+    "community": "西城公馆",
+    "detailAddress": "凤城大道",
+    "price": "6002元/㎡"
+  },
+  {
+    "houseName": "大通 瀚城五期 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "78㎡",
+    "houseLayers": "高层（共17层）",
+    "houseDirect": "南北向",
+    "community": "瀚城五期",
+    "detailAddress": "大通",
+    "price": "4743元/㎡"
+  },
+  {
+    "houseName": "田家庵 艺山南小区 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "135.45㎡",
+    "houseLayers": "中层（共30层）",
+    "houseDirect": "南北向",
+    "community": "艺山南小区",
+    "detailAddress": "其他",
+    "price": "7087元/㎡"
+  },
+  {
+    "houseName": "毛集实验区 淮南毛集曹集临街铺面急售价格可谈29万251平3室2厅2卫!! 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "251㎡",
+    "houseLayers": "高层（共2层）",
+    "houseDirect": "南北向",
+    "community": "淮南毛集曹集临街铺面",
+    "detailAddress": "毛集实验区",
+    "price": "1155元/㎡"
+  },
+  {
+    "houseName": "田家庵 前锋二村 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "107.24㎡",
+    "houseLayers": "高层（共5层）",
+    "houseDirect": "南北向",
+    "community": "前锋二村",
+    "detailAddress": "其他",
+    "price": "8392元/㎡"
+  },
+  {
+    "houseName": "八公山 新淮小区 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "100.6㎡",
+    "houseLayers": "低层（共6层）",
+    "houseDirect": "南向",
+    "community": "新淮小区",
+    "detailAddress": "八公山",
+    "price": "1789元/㎡"
+  },
+  {
+    "houseName": "山南新区 西湖春天 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "119.8㎡",
+    "houseLayers": "中层（共5层）",
+    "houseDirect": "南北向",
+    "community": "西湖春天",
+    "detailAddress": "山南新区-淮河大道与南纬三路交汇处向西200米",
+    "price": "7512元/㎡"
+  },
+  {
+    "houseName": "田家庵 恒大御府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "118㎡",
+    "houseLayers": "中层（共46层）",
+    "houseDirect": "南向",
+    "community": "恒大御府",
+    "detailAddress": "洞山",
+    "price": "8474元/㎡"
+  },
+  {
+    "houseName": "山南新区 金大地英伦联邦 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "136.6㎡",
+    "houseLayers": "低层（共8层）",
+    "houseDirect": "东北向",
+    "community": "金大地英伦联邦",
+    "detailAddress": "山南新区-淮南市山南新区淮河大道与春华大街交叉口",
+    "price": "7320元/㎡"
+  },
+  {
+    "houseName": "田家庵 华声苑 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "131㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南北向",
+    "community": "华声苑",
+    "detailAddress": "其他-安徽省淮南市田家庵区陈洞南路",
+    "price": "5496元/㎡"
+  },
+  {
+    "houseName": "大通 易居东方城 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "123㎡",
+    "houseLayers": "中层（共32层）",
+    "houseDirect": "西向",
+    "community": "易居东方城",
+    "detailAddress": "城东-淮南市大通区沿田大路",
+    "price": "4552元/㎡"
+  },
+  {
+    "houseName": "田家庵 协和嘉苑 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "122㎡",
+    "houseLayers": "中层（共28层）",
+    "houseDirect": "东向",
+    "community": "协和嘉苑",
+    "detailAddress": "龙湖-淮滨西路与人民北路交汇处 市人民医院对面",
+    "price": "7049元/㎡"
+  },
+  {
+    "houseName": "大通 洛电新村 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "52.48㎡",
+    "houseLayers": "高层（共5层）",
+    "houseDirect": "南向",
+    "community": "洛电新村",
+    "detailAddress": "大通",
+    "price": "952元/㎡"
+  },
+  {
+    "houseName": "田家庵 淮南山南东昌庭院 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "120.26㎡",
+    "houseLayers": "中层（共32层）",
+    "houseDirect": "西向",
+    "community": "淮南山南东昌庭院",
+    "detailAddress": "其他",
+    "price": "7566元/㎡"
+  },
+  {
+    "houseName": "田家庵 恒大御府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "131㎡",
+    "houseLayers": "低层（共33层）",
+    "houseDirect": "南向",
+    "community": "恒大御府",
+    "detailAddress": "洞山",
+    "price": "7709元/㎡"
+  },
+  {
+    "houseName": "谢家集 西都绿洲 5室3厅",
+    "houseScale": "5室3厅",
+    "houseArea": "269.3㎡",
+    "houseLayers": "高层（共11层）",
+    "houseDirect": "南北向",
+    "community": "西都绿洲",
+    "detailAddress": "蔡新路-谢李路莲花市场西侧,20中旁",
+    "price": "2079元/㎡"
+  },
+  {
+    "houseName": "山南新区 广弘城国际社区 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "128.17㎡",
+    "houseLayers": "中层（共18层）",
+    "houseDirect": "南向",
+    "community": "广弘城国际社区",
+    "detailAddress": "山南新区-淮河大道与南纬山路交汇处西南角",
+    "price": "8582元/㎡"
+  },
+  {
+    "houseName": "田家庵 恒大御府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "127㎡",
+    "houseLayers": "高层（共33层）",
+    "houseDirect": "南向",
+    "community": "恒大御府",
+    "detailAddress": "洞山",
+    "price": "7952元/㎡"
+  },
+  {
+    "houseName": "寿县 楚都小区 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "80㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南北向",
+    "community": "楚都小区",
+    "detailAddress": "寿县新一中",
+    "price": "3500元/㎡"
+  },
+  {
+    "houseName": "田家庵 恒大御府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "132㎡",
+    "houseLayers": "低层（共33层）",
+    "houseDirect": "南向",
+    "community": "恒大御府",
+    "detailAddress": "洞山",
+    "price": "7916元/㎡"
+  },
+  {
+    "houseName": "田家庵 恒大御府 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "142.5㎡",
+    "houseLayers": "中层（共33层）",
+    "houseDirect": "南向",
+    "community": "恒大御府",
+    "detailAddress": "洞山",
+    "price": "9052元/㎡"
+  },
+  {
+    "houseName": "田家庵 金大地龙湖中心 2室1厅",
+    "houseScale": "2室1厅",
+    "houseArea": "71.5㎡",
+    "houseLayers": "高层（共27层）",
+    "houseDirect": "东西向",
+    "community": "金大地龙湖中心",
+    "detailAddress": "龙湖路-金大地龙湖中心",
+    "price": "5314元/㎡"
+  },
+  {
+    "houseName": "凤台 凤凰首府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "118.5㎡",
+    "houseLayers": "中层（共17层）",
+    "houseDirect": "南北向",
+    "community": "凤凰首府",
+    "detailAddress": "新体育场",
+    "price": "5485元/㎡"
+  },
+  {
+    "houseName": "田家庵 力达明和绿洲 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "158㎡",
+    "houseLayers": "低层（共18层）",
+    "houseDirect": "南北向",
+    "community": "力达明和绿洲",
+    "detailAddress": "其他",
+    "price": "7974元/㎡"
+  },
+  {
+    "houseName": "山南新区 西湖春天 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "112㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南北向",
+    "community": "西湖春天",
+    "detailAddress": "山南新区-淮河大道与南纬三路交汇处向西200米",
+    "price": "8571元/㎡"
+  },
+  {
+    "houseName": "田家庵 奥林花园小区。 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "112.11㎡",
+    "houseLayers": "低层（共24层）",
+    "houseDirect": "南北向",
+    "community": "奥林花园小区。",
+    "detailAddress": "国庆中路",
+    "price": "5351元/㎡"
+  },
+  {
+    "houseName": "寿县 寿县北街党校居民楼 3室1厅",
+    "houseScale": "3室1厅",
+    "houseArea": "87㎡",
+    "houseLayers": "高层（共5层）",
+    "houseDirect": "南向",
+    "community": "寿县北街党校居民楼",
+    "detailAddress": "寿春镇",
+    "price": "3563元/㎡"
+  },
+  {
+    "houseName": "山南新区 金大地英伦联邦 2室2厅",
+    "houseScale": "2室2厅",
+    "houseArea": "81.3㎡",
+    "houseLayers": "低层（共33层）",
+    "houseDirect": "南北向",
+    "community": "金大地英伦联邦",
+    "detailAddress": "山南新区-淮南市山南新区淮河大道与春华大街交叉口",
+    "price": "7011元/㎡"
+  },
+  {
+    "houseName": "田家庵 金大地龙湖中心 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "135㎡",
+    "houseLayers": "高层（共33层）",
+    "houseDirect": "南向",
+    "community": "金大地龙湖中心",
+    "detailAddress": "龙湖路-金大地龙湖中心",
+    "price": "8518元/㎡"
+  },
+  {
+    "houseName": "田家庵 惠利花园城翰林华府 3室2厅",
+    "houseScale": "3室2厅",
+    "houseArea": "141.2㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南北向",
+    "community": "惠利花园城翰林华府",
+    "detailAddress": "洞山",
+    "price": "4957元/㎡"
+  },
+  {
+    "houseName": "潘集 潘集新原装小区 4室2厅",
+    "houseScale": "4室2厅",
+    "houseArea": "150㎡",
+    "houseLayers": "高层（共6层）",
+    "houseDirect": "南北向",
+    "community": "潘集新原装小区",
+    "detailAddress": "潘集",
+    "price": "1933元/㎡"
+  }
+]

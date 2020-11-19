@@ -16,7 +16,7 @@ let httpUrl = 'https://sobooks.cc/';
     // 设置放慢每个步骤的毫秒数
     slowMo: 250,
     // 设置超时时间 
-    timeout: 30000
+    timeout: 60000
   }
   let options = {
     headless: true
@@ -131,18 +131,23 @@ let httpUrl = 'https://sobooks.cc/';
     })
     await page.goto(pageObj.href)
     let eleA = await page.$('.dltable tr:nth-child(3) a:last-child')
-    let aHref = await eleA.getProperty('href')
-    // console.log(aHref); ElementHandle.getProperty返回的是一个JsHandle对象
-    aHref = aHref._remoteObject.value
-    aHref = aHref.split('?url=')[1]
-    let content = `{"title":"${pageObj.title}","href":"${aHref}"}---\n`
-    fs.writeFile('book.txt', content, { flag: "a" }, () => {
-      console.log("已将书下载路径写入: " + pageObj.title);
-      page.close()
-    })
+    if (eleA) {
+      let aHref = await eleA.getProperty('href')
+      // console.log(aHref); ElementHandle.getProperty返回的是一个JsHandle对象
+      aHref = aHref._remoteObject.value
+      aHref = aHref.split('?url=')[1]
+      let content = `{"title":"${pageObj.title}","href":"${aHref}"}---\n`
+      fs.writeFile('book.txt', content, { flag: "a" }, () => {
+        console.log("已将书下载路径写入: " + pageObj.title);
+        page.close()
+      })
 
+    }else {
+      console.log(pageObj.title+"不提供下载链接！");
+      page.close()
+    }
   }
-  await pageList(101)
+  await pageList(103)
   // getPageInfo({href: 'https://sobooks.cc/books/14620.html', title:"海明威作品精选系列（套装共6册）"})
 
 })();
