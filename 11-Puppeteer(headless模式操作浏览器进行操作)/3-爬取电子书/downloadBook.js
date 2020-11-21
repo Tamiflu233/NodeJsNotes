@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const axios = require('axios');
 const url = require('url');
 const fs = require('fs');
 const { fsRead, fsWrite } = require('./lcfs');
@@ -70,14 +71,47 @@ const { fsRead, fsWrite } = require('./lcfs');
     let elementAHref = await elementA.getProperty('href')
     elementAHref = elementAHref._remoteObject.value
     page.close()
-    bookLinkPage(elementAHref)
+    bookLinkPage(elementAHref,bookObj.title)
   }
-  async function bookLinkPage (linkUrl) {
+  async function bookLinkPage (linkUrl,title) {
     let page = await browser.newPage()
+    // 截取谷歌请求
+    await page.setRequestInterception(true);
+    // 监听请求事件，拦截小广告
+    page.on('request', interceptedRequest => {
+      // 用url模块解析出主机名
+      let urlObj = url.parse(interceptedRequest.url())
+      // console.log(urlObj.hostname);
+      // 14804066.ch1.ctc.data.tv002.com
+      if (urlObj.hostname.search(/\.tv002\.com$/igs) !== -1) {
+        // 拦截到的请求是发给谷歌广告联盟的，拒绝掉它(谷歌广告请求响应太慢)
+        console.log('截获地址: ');
+        console.log(urlObj.href);
+        interceptedRequest.abort()
+        let ws = fs.createWriteStream('./book/'+title+".epub")
+        axios.get(urlObj.href, {responseType: 'stream'}).then(res => {
+          res.data.on("close",() => {
+            ws.close()
+          })
+          ws.on('close',() => {
+            console.log('下载已完成: '+title);
+          })
+          res.data.pipe(ws)
+        })
+      } else {
+        interceptedRequest.continue()
+      }
+    })
     await page.goto(linkUrl)
+    await page.waitForSelector('.btn.btn-outline-secondary.fs--1')
     let btn = await page.$('.btn.btn-outline-secondary.fs--1')
     await btn.click()
+    // 判断请求完成
+    // page.on('requestfinished', (req) => {
+    //   console.log("下载已完成: "+req.url());
+    // })
 
+    
   }
   downloadBook()
 
