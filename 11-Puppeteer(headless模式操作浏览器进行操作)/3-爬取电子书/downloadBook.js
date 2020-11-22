@@ -70,8 +70,8 @@ const { fsRead, fsWrite } = require('./lcfs');
     let elementA = await page.$('#table_files tbody .even a')
     let elementAHref = await elementA.getProperty('href')
     elementAHref = elementAHref._remoteObject.value
-    page.close()
     bookLinkPage(elementAHref,bookObj.title)
+    await page.close()
   }
   async function bookLinkPage (linkUrl,title) {
     let page = await browser.newPage()
@@ -95,9 +95,13 @@ const { fsRead, fsWrite } = require('./lcfs');
           })
           ws.on('close',() => {
             console.log('下载已完成: '+title);
+            // 下完一本再下一本，没下完就下其他的就会被反爬503
+            downloadBook()
+            page.close()
           })
           res.data.pipe(ws)
         })
+        
       } else {
         interceptedRequest.continue()
       }
@@ -111,7 +115,6 @@ const { fsRead, fsWrite } = require('./lcfs');
     //   console.log("下载已完成: "+req.url());
     // })
 
-    
   }
   downloadBook()
 

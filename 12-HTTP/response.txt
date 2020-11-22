@@ -1,0 +1,52 @@
+响应头
+HTTP/1.1 200 OK
+Date: Sun, 22 Nov 2020 03:42:02 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Sun, 22 Nov 2020 03:43:57 GMT
+Vary: Accept-Encoding
+Vary: Origin
+Cache-Control: max-age=120
+Server: MIFE/3.0
+X-Frame-Options: SAMEORIGIN
+Content-Encoding: gzip
+X-Ser: BC20_dx-lt-yd-fujian-xiamen-8-cache-2, BC13_yatx-beijing-beijing-2-cache-1, BC139_ck-beijing-beijing-3-cache-3, BC140_ck-shanghai-shanghai-3-cache-1
+X-Cache: HIT from BC140_ck-shanghai-shanghai-3-cache-1(baishan)
+
+响应正文
+<!doctype html>
+
+    <html lang="zh-CN" xml:lang="zh-CN"></html>
+
+    <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=Edgitge" />
+        <meta charset="UTF-8" />
+        <title>
+            小米商城 - 小米10 Pro、Redmi K30 Pro、小米MIX Alpha，小米电视官方网站
+        </title>
+        <meta name="description" content="小米官网直营小米公司旗下所有产品，包括小米手机系列小米10 Pro 、小米9、小米MIX Alpha，Redmi 红米系列Redmi 10X、Redmi K30，小米电视、笔记本、米家智能家居等，同时提供小米客户服务及售后支持." />
+        <meta name="keywords" content="小米,redmi,小米10,Redmi 10X,小米MIX Alpha,小米商城" />
+        
+<meta name="viewport" content="width=1226" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//s01.mifile.cn" />
+<link rel="dns-prefetch" href="//c1.mifile.cn" />
+<link rel="dns-prefetch" href="//i3.mifile.cn" />
+<link rel="dns-prefetch" href="//i2.mifile.cn" />
+<link rel="dns-prefetch" href="//i1.mifile.cn" />
+<link rel="dns-prefetch" href="//i8.mifile.cn" />
+<link rel="dns-prefetch" href="//v.mifile.cn" />
+<link rel="dns-prefetch" href="//a.huodong.mi.cn" />
+<link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link href="//s02.mifile.cn/assets/css/home.10a2e1fe.css" rel="preload" as="style"><link href="//s02.mifile.cn/assets/js/chunk-vendors.50ac3731.js" rel="preload" as="script"><link href="//s02.mifile.cn/assets/js/home.21a2b441.js" rel="preload" as="script"><link href="//s02.mifile.cn/assets/css/home.10a2e1fe.css" rel="stylesheet"></head>
+
+    <body>
+    ....
+    </body>
+</html>

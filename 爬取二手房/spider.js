@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const { resolve } = require('path');
-
+const ObjectsToCsv = require('objects-to-csv');
 // 爬取二手房网
 
 
@@ -31,7 +31,7 @@ async function wait(millisec) {
 
   // console.log(pageNum);
   
-  for(let i = 0;i < cityList.length;i++){
+  for(let i = 2;i < cityList.length;i++){
     await writeCityHouseInfo(browser, cityList[i])
     await wait(1000)
   }
@@ -113,11 +113,16 @@ async function writeCityHouseInfo(browser, cityObj) {
   for (let i = 1; i <= pageNum; i++) {
     let infos = await getPageInfo(browser, cityObj.cityUrl, i)
     console.log('第' + i + '页爬取完毕');
+    if (infos.length === 0){
+      console.log("爬了个寂寞");
+    }
     cityHouseInfo.push(...infos)
     await wait(500)
   }
-  let jsonInfos = JSON.stringify(cityHouseInfo)
-  fs.writeFile(`./二手房信息/${cityObj.cityName}.json`, jsonInfos, { flag: "a" }, () => {
-    console.log("房产信息写入完成");
-  })
+  let csv = new ObjectsToCsv(cityHouseInfo)
+  await csv.toDisk(`./二手房信息/${cityObj.cityName}.csv`)
+  // let jsonInfos = JSON.stringify(cityHouseInfo)
+  // fs.writeFile(`./二手房信息/${cityObj.cityName}.json`, jsonInfos, { flag: "a" }, () => {
+  //   console.log("房产信息写入完成");
+  // })
 }

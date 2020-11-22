@@ -40,7 +40,7 @@ let httpUrl = 'https://sobooks.cc/';
     page.on('request', interceptedRequest => {
       // 用url模块解析出主机名
       let urlObj = url.parse(interceptedRequest.url())
-      if (urlObj.hostname === 'googleads.g.doubleclick.net') {
+      if (urlObj.hostname.indexOf('google') !== -1) {
         // 拦截到的请求是发给谷歌广告联盟的，拒绝掉它(谷歌广告请求响应太慢)
         interceptedRequest.abort()
       } else {
@@ -70,7 +70,7 @@ let httpUrl = 'https://sobooks.cc/';
     page.on('request', interceptedRequest => {
       // 用url模块解析出主机名
       let urlObj = url.parse(interceptedRequest.url())
-      if (urlObj.hostname === 'googleads.g.doubleclick.net') {
+      if (urlObj.hostname.indexOf('google') !== -1) {
         // 拦截到的请求是发给谷歌广告联盟的，拒绝掉它(谷歌广告请求响应太慢)
         interceptedRequest.abort()
       } else {
@@ -122,7 +122,7 @@ let httpUrl = 'https://sobooks.cc/';
     page.on('request', interceptedRequest => {
       // 用url模块解析出主机名
       let urlObj = url.parse(interceptedRequest.url())
-      if (urlObj.hostname === 'googleads.g.doubleclick.net') {
+      if (urlObj.hostname.indexOf('google') !== -1) {
         // 拦截到的请求是发给谷歌广告联盟的，拒绝掉它(谷歌广告请求响应太慢)
         interceptedRequest.abort()
       } else {

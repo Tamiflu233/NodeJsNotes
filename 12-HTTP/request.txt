@@ -1,0 +1,24 @@
+TCP/IP协议
+d目标:58.83.160.156:80
+s来源:192.168.0.1:62345
+HTTP协议
+请求头(防止请求相关的信息)
+GET / HTTP/1.1
+Host: www.mi.com
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "\\Not;A\"Brand";v="99", "Google Chrome";v="85", "Chromium";v="85"
+sec-ch-ua-mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: xmuuid=XMGUEST-AB3F4150-2C74-11EB-9201-D18D0FA5C2AD; XM_agreement=0; mi_home_flashsale_round=1606010400; mstuid=1606016517112_8691; xm_vistor=1606016517112_8691_1606016517119-1606016517119; mstz=||1922549740.10|||; pageid=81190ccc4d52f577; Hm_lvt_c3e3e8b3ea48955284516b186acf0f4e=1606016517; Hm_lpvt_c3e3e8b3ea48955284516b186acf0f4e=1606016517
+
+请求体(一般是POST表单传输的数据)
+username=admin&password=123
