@@ -26,12 +26,12 @@ async function wait(millisec) {
   let cityList = await getCities(browser)
   let jsonCityList = JSON.stringify(cityList)
   fs.writeFile('cityInfo.json', jsonCityList, { flag: "w" }, () => {
-    console.log('写入成功');
+    console.log('写入成功, 共有'+cityList.length+"个城市");
   })
 
   // console.log(pageNum);
   
-  for(let i = 2;i < cityList.length;i++){
+  for(let i = 516;i < cityList.length;i++){
     await writeCityHouseInfo(browser, cityList[i])
     await wait(1000)
   }
@@ -48,7 +48,10 @@ async function getCities(browser) {
 
     elements.forEach((item, index) => {
       let cityName = item.innerHTML;
-      let cityUrl = item.getAttribute('href').replace('.fang.com/', '.esf.fang.com')
+      let cityUrl = item.getAttribute('href').trim().replace('.fang.com', '.esf.fang.com')
+      if(cityUrl.search('cq') !== -1 && cityUrl !== 'http://cq.fang.com/') {
+        cityUrl = cityUrl.replace('cq','');
+      }
       let obj = {
         cityName,
         cityUrl
@@ -65,10 +68,15 @@ async function getCities(browser) {
 async function getPageNum(browser, cityUrl) {
   let page = await browser.newPage()
   await page.goto(cityUrl)
-  let pageNum = await page.$eval('.page_al span:last-child', element => {
-    let numStr = element.innerHTML
-    return numStr.slice(1, numStr.length - 1)
-  })
+  let pageNum = 0
+  try {
+      pageNum = await page.$eval('.page_al span:last-child', element => {
+        let numStr = element.innerHTML
+        return numStr.slice(1, numStr.length - 1)
+      })
+  } catch (error) {
+    console.log("该城市没有二手房: "+cityUrl);
+  }
   await page.close()
   return parseInt(pageNum)
 }
@@ -107,7 +115,12 @@ async function getPageInfo(browser, cityUrl, pageId) {
 
 // 爬取一个省市所有的房产信息并写到文件中
 async function writeCityHouseInfo(browser, cityObj) {
-  let pageNum = await getPageNum(browser, cityObj.cityUrl)
+  let pageNum = 0
+  try {
+    pageNum = await getPageNum(browser, cityObj.cityUrl)
+  } catch (error) {
+    console.log(cityObj.cityName+"没有二手房");
+  }
   console.log('当前爬取'+cityObj.cityName+', 共'+pageNum+'页');
   let cityHouseInfo = []
   for (let i = 1; i <= pageNum; i++) {
@@ -115,6 +128,7 @@ async function writeCityHouseInfo(browser, cityObj) {
     console.log('第' + i + '页爬取完毕');
     if (infos.length === 0){
       console.log("爬了个寂寞");
+      process.exit(0);
     }
     cityHouseInfo.push(...infos)
     await wait(500)
