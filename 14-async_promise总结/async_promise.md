@@ -155,6 +155,80 @@
        resolve(data);
       }
     })
+```
+  转换成promise对象
+```js
+  new Promise((resolve,reject) => {
+    fs.readFile(path,{flag: 'r',encoding: "utf-8"},(err, data) => {
+      if(err) {
+        // 失败执行的代码
+        reject(err);
+      }else {
+        // 成功执行的代码
+       resolve(data);
+      }
+    })
   })
 ```
+  由于每次使用，都不想写这么多代码，那么就会把这样的写法直接进行函数的封装
+```js
+  function fsRead(path) {
+    return new Promise((resolve,reject) => {
+      fs.readFile(path,{flag: 'r',encoding: "utf-8"},(err, data) => {
+        if(err) {
+          // 失败执行的代码
+          reject(err);
+        }else {
+          // 成功执行的代码
+        resolve(data);
+        }
+      })
+    })
+  }
+```
+  使用的时候，就可以使用promise写法
+```js
+  p1 = fsRead(path) //就可以得到promise对象
+  p1.then(data => {
+    console.log('输出数据： '，data)
+  })
+```
+async/await写法
+```js
+  ;(async () => {
+    let data = await fsRead(path)
+    console.log('输出数据： '，data)
+  })()
+```
+异步async函数调用之后也是一个Promise对象
+```js
+  async function test() {
+    let data = await fsRead(path)
+    return data
+  }
+  //let a = test()一开始拿不到结果，因为async函数是异步函数
+  // 会在所有同步代码执行玩之后，再在event loop里面排队执行
+  //所以这时候会先拿到undefined，等到异步执行了test()
+  // 才会拿到返回的Promise,所以要打印data不能直接写
+  // 得写到.then函数里面
+  let a = test()  //异步函数调用后，也是一个Promise对象
+  a.then(function(data) {
+    console.log(data)
+  })
+```
+当然，你也可以在最外面包一个async函数，这样就可以用await
+```js
+;(async () => {
+  async function test() {
+    let data = await fsRead(path)
+    return data
+  }
+  let p = test()  //不用await
+  p.then(data => {
+    console.log(data)
+  })
+  let a = await test()  //用await
+  console.log(a)
+})()
 
+```

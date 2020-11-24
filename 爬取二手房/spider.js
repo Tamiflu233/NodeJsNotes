@@ -31,7 +31,7 @@ async function wait(millisec) {
 
   // console.log(pageNum);
   
-  for(let i = 516;i < cityList.length;i++){
+  for(let i = 0;i < cityList.length;i++){
     await writeCityHouseInfo(browser, cityList[i])
     await wait(1000)
   }
@@ -49,8 +49,17 @@ async function getCities(browser) {
     elements.forEach((item, index) => {
       let cityName = item.innerHTML;
       let cityUrl = item.getAttribute('href').trim().replace('.fang.com', '.esf.fang.com')
+      // 特殊处理一些城市的url
       if(cityUrl.search('cq') !== -1 && cityUrl !== 'http://cq.fang.com/') {
         cityUrl = cityUrl.replace('cq','');
+      }else if(cityName === '香港') {
+        cityUrl = 'https://hk.esf.fang.com'
+      }else if(cityName === '昌吉') {
+        cityUrl = 'https://changji.esf.fang.com'
+      }else if(cityName === '绍兴') {
+        cityUrl = 'https://shaoxing.esf.fang.com'
+      }else if(cityName === '吴江') {
+        cityUrl = 'https://wj.esf.fang.com'
       }
       let obj = {
         cityName,
