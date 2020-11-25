@@ -10,5 +10,11 @@
   <h1>{{name}}</h1>
   <h3>电影简介: {{brief}}</h3>
   <p>电影主角: {{author}}</p>
+  <h4>主演</h4>
+  <ul>
+    {%for {list} %}
+    <li>{{item}}</li>
+    {%endfor%}
+  </ul>
 </body>
 </html>

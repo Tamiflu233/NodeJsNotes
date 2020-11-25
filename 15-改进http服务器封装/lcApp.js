@@ -55,16 +55,38 @@ function render (options,path) {
       console.log(err);
     } else {
       console.log(data);
-      let reg = /\{\{(.*?)\}\}/igs
-      let result
+      // 匹配普通的变量，并且替换内容
+      data = replaceVar(data, options)
+
+      // 匹配循环的变量，并且替换循环的内容
+      let reg = /\{\%for \{(.*?)\} \%\}(.*?)\{\%endfor\%\}/igs
       while(result = reg.exec(data)) {
         let strKey = result[1].trim()
-        let strValue = options[strKey]
-        data = data.replace(result[0],strValue)
+        // 通过key值获取数组内容
+        let strValueArr = options[strKey]
+        let listStr = ''
+        strValueArr.forEach((item,index) => {
+          // 替换每一项内容里的变量
+          listStr += replaceVar(result[2], {"item":item})
+
+        })
+        data = data.replace(result[0],listStr)
       }
+
       // 因为是箭头函数，会依次向外层作用域找this，而render函数在上面赋值给了res的render方法，自然this就是res
       this.end(data)
     }
   })
+}
+
+function replaceVar (data,options) {
+  let reg = /\{\{(.*?)\}\}/igs
+  let result
+  while(result = reg.exec(data)) {
+    let strKey = result[1].trim()
+    let strValue = options[strKey]
+    data = data.replace(result[0],strValue)
+  }
+  return data
 }
 module.exports = lcApp;
