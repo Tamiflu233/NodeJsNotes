@@ -4,19 +4,20 @@ let app = new lcApp()
 
 app.staticDir = '/abc'
 
-app.on('/', (req,res) => {
+app.on('^/$', (req,res) => {
   res.setHeader('content-type','text/html; charset=utf-8')
   res.end("<h1>这是首页</h1><img src='./abc/avatar.jpg'>")
 })
 
-app.on('/gnxw', (req,res) => {
+
+app.on('/gnxw/(.*)', (req,res) => {
   res.setHeader('content-type','text/html; charset=utf-8')
   if(req.pathObj.base == "index")
     res.end("这是国内新闻")
   else
     res.end("这是国内新闻的其他页")
 })
-app.on('/movies',(req, res) => {
+app.on('/movies/[01]',(req, res) => {
   let movies = [
     {
       name:"雪暴",
@@ -27,11 +28,28 @@ app.on('/movies',(req, res) => {
       name: "少年的你",
       brief: "陈念（周冬雨 饰）是一名即将参加高考的高三学生，同校女生胡晓蝶（张艺凡 饰）的跳楼自杀让她的生活陷入了困顿之中。胡晓蝶死后，陈念遭到了以魏莱（周也 饰）为首的三人组的霸凌，魏莱虽然表面上看来是乖巧的优等生，实际上却心思毒辣，胡晓蝶的死和她有着千丝万缕的联系。",
       author:"周冬雨",
-      stars: ["小王", "中国BOY","老番茄"]
+      stars: [
+        {
+          name:"蔡徐坤",
+          gender:"男"
+        },
+        {
+          name:"范冰冰",
+          gender:"女"
+        },
+        {
+          name:"李晨",
+          gender:"男"
+        }
+      ]
     }
   ]
   let index = req.pathObj.base;
-  res.render(movies[index],'./template/index.html')
+  if(index == 0){
+    res.render(movies[index],'./template/index0.html')
+  }else if(index == 1) {
+    res.render(movies[index],'./template/index1.html')
+  }
 })
 
 

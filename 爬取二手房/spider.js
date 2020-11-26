@@ -5,13 +5,13 @@ const ObjectsToCsv = require('objects-to-csv');
 // 爬取二手房网
 
 
-// 省份选择网站
+// 省份列表网站
 let httpUrl = 'https://www.fang.com/SoufunFamily.htm';
 
 let options = {
   headless: true
 }
-// 延迟函数
+// 延迟函数(爬取页面需要延迟)
 async function wait(millisec) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -30,12 +30,12 @@ async function wait(millisec) {
   })
 
   // console.log(pageNum);
-  
+  // 爬取633个城市
   for(let i = 0;i < cityList.length;i++){
     await writeCityHouseInfo(browser, cityList[i])
     await wait(1000)
   }
-  
+  // 关闭浏览器
   await browser.close();
 })()
 
@@ -43,6 +43,7 @@ async function wait(millisec) {
 async function getCities(browser) {
   let page = await browser.newPage()
   await page.goto(httpUrl)
+  // 获取所有城市的url
   let cityList = await page.$$eval('#senfe tr:not(#sffamily_B03_30) td a', elements => {
     let cities = []
 
@@ -79,6 +80,7 @@ async function getPageNum(browser, cityUrl) {
   await page.goto(cityUrl)
   let pageNum = 0
   try {
+    // 获取总页码字符串
       pageNum = await page.$eval('.page_al span:last-child', element => {
         let numStr = element.innerHTML
         return numStr.slice(1, numStr.length - 1)
@@ -93,14 +95,20 @@ async function getPageNum(browser, cityUrl) {
 // 爬取每一页的所有房产信息并返回
 async function getPageInfo(browser, cityUrl, pageId) {
   let page = await browser.newPage()
+  // 跳转到每一页
   await page.goto(cityUrl + '/house/' + `h316-i3${pageId}`)
+  // 获取该页面所有二手房信息
   let houseInfos = await page.$$eval('dl[dataflag="bg"]', elements => {
     let infos = []
     elements.forEach((item, index) => {
       // console.log(item.innerHTML);
+      // 二手房名称
       let houseName = item.querySelector('.tit_shop').innerText
+      // 二手房详细信息
       let houseDetail = item.querySelector('.tel_shop').innerText.split(' | ')
+      // 二手房地址
       let addressInfo = item.querySelector('.add_shop').innerText.split('\n')
+      // 二手房房价
       let price = item.querySelector('.price_right span:last-child').innerText
       let houseInfo = {
         houseName,
@@ -126,8 +134,10 @@ async function getPageInfo(browser, cityUrl, pageId) {
 async function writeCityHouseInfo(browser, cityObj) {
   let pageNum = 0
   try {
+    // 获取页数
     pageNum = await getPageNum(browser, cityObj.cityUrl)
   } catch (error) {
+    // 若没有二手房，则输出提示
     console.log(cityObj.cityName+"没有二手房");
   }
   console.log('当前爬取'+cityObj.cityName+', 共'+pageNum+'页');
@@ -136,16 +146,15 @@ async function writeCityHouseInfo(browser, cityObj) {
     let infos = await getPageInfo(browser, cityObj.cityUrl, i)
     console.log('第' + i + '页爬取完毕');
     if (infos.length === 0){
+      // 若有验证码出现，直接提示并退出
       console.log("爬了个寂寞");
       process.exit(0);
     }
     cityHouseInfo.push(...infos)
     await wait(500)
   }
+  // 写入csv
   let csv = new ObjectsToCsv(cityHouseInfo)
   await csv.toDisk(`./二手房信息/${cityObj.cityName}.csv`)
-  // let jsonInfos = JSON.stringify(cityHouseInfo)
-  // fs.writeFile(`./二手房信息/${cityObj.cityName}.json`, jsonInfos, { flag: "a" }, () => {
-  //   console.log("房产信息写入完成");
-  // })
+  
 }

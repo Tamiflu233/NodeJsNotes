@@ -12,8 +12,10 @@
   <p>电影主角: {{author}}</p>
   <h4>主演</h4>
   <ul>
-    {%for {list} %}
-    <li>{{item}}</li>
+    {%for {stars} %}
+    <li>
+      <h4>姓名: {{item}}</h4>
+    </li>
     {%endfor%}
   </ul>
 </body>
