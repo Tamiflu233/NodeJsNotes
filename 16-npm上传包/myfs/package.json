@@ -1,0 +1,15 @@
+{
+  "name": "tamifs",
+  "version": "0.1.0",
+  "description": "将原生fs模块进行promise封装,可快速使用async/await模式",
+  "main": "lcfs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fs",
+    "promise封装"
+  ],
+  "author": "tamiflu233",
+  "license": "ISC"
+}
