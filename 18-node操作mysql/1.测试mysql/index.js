@@ -4,7 +4,7 @@ let options = {
   // port:"3306", //可选，默认3306
   user:"root",
   password:"weng6622",
-  database:"shop"
+  database:"mall"
 }
 
 // 创建与数据库的连接的对象
@@ -42,17 +42,17 @@ con.query(strSql2,(err, results, fields)=>{
 }) */
 
 // 删除库
-let strSql3 = "drop database shop"
+/* let strSql3 = "drop database shop"
 con.query(strSql3,(err, results, fields)=>{
   if(err) {
     console.log(err);
   } else {
     console.log("删除数据库成功");
   }
-})
+}) */
 
 // 创建数据库
-/* let strSql4 = 'create database shop'
+/* let strSql4 = 'create database mall'
 con.query(strSql4,(err, results, fields)=>{
   if(err) {
     console.log(err);
@@ -63,12 +63,13 @@ con.query(strSql4,(err, results, fields)=>{
 
 // 创建表
 /* let strSql5 = `
-create table user(
-  id int,
-  name varchar(20),
-  gender varchar(10),
-  primary key(id)
-)
+CREATE TABLE mall.UserAccount  (
+  id int NOT NULL AUTO_INCREMENT,
+  username varchar(255) NULL,
+  password varchar(255) NULL,
+  mail varchar(255) NULL,
+  PRIMARY KEY (id)
+);
 `
 con.query(strSql5,(err, results, fields)=>{
   if(err) {
@@ -77,3 +78,25 @@ con.query(strSql5,(err, results, fields)=>{
     console.log("数据表创建成功");
   }
 }) */
+
+// 插入数据
+/* let strSql6 = "insert into UserAccount (id,username,password,mail) values (1,'Taa','123123','kk@qq.com')"
+con.query(strSql6,(err, results, fields)=>{
+  if(err) {
+    console.log(err);
+  } else {
+    console.log("数据插入成功");
+    console.log(results);
+  }
+})  */
+
+// 使用占位符来插入数据
+let strSql7 = "insert into UserAccount (username,password,mail) values (?,?,?)"
+con.query(strSql7,["小红","666avv","123@126.com"],(err, results, fields)=>{
+  if(err) {
+    console.log(err);
+  } else {
+    console.log("数据插入成功");
+    console.log(results);
+  }
+}) 
