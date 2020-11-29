@@ -19,8 +19,9 @@ async function getPageUrl (num) {
   let res = await axios.get(httpUrl);
   // console.log(res.data);
   let $ = cheerio.load(res.data)
-  $("#cardslist .card-item .thumb-img > a").each((index,elem) => {
+  $("#cardslist .metacat + a").each((index,elem) => {
     let href = $(elem).attr("href")
+    getBookInfo(href)
     // console.log(href);
     // 根据地址访问书籍详情页面
   })
@@ -58,7 +59,7 @@ async function getBookInfo (href) {
   // 简介
   let brief = $('.article-content').html()
   //书籍链接
-  let bookurl = href
+  let bookUrl = href
   // 下载链接
   let download = $('body > section > div.content-wrap > div > article > table > tbody > tr:nth-child(3) > td > a:nth-child(3)').attr('href')
   if(download) {
@@ -81,6 +82,6 @@ async function getBookInfo (href) {
 
 // getPageUrl(page)
 
-let bookUrl = 'https://sobooks.cc/books/14633.html'
-getBookInfo(bookUrl)
-
+// let bookUrl = 'https://sobooks.cc/books/14633.html'
+// getBookInfo(bookUrl)
+getPageUrl(200)
